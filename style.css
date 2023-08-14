@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    /* imp  */
+    scroll-behavior: smooth; 
+}
+/* body */
+body{
+    background: #f2f2f2;
+}
+/* header */
+header{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    align-items:center;
+    background: #333;
+    z-index:5;
+}
+.navbar{
+    width:1200px;
+    padding:0 10px;
+    display:flex;
+    align-items:center;
+    max-width:space-between;
+    justify-content: space-between;
+}
+h2{
+    font-size:1.5em;
+    font-weight: bold;
+    padding:20px 0;
+}
+.logo > a{
+    text-decoration:none;
+    color:white;
+}
+.links{
+    list-style-type:none;
+    display:flex;
+    align-items:center;
+}
+.links li a{
+    text-decoration:none;
+    color:white;
+    margin-left:40px;
+    padding:20px 0;
+    display:inline-block;
+}
+
+/* home section */
+.home_section{
+    height:100vh;
+    width:100%;
+    position: relative;
+    background: url(https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center 65% ;
+}
+.home_section::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.home_section .content{
+    height:85%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+   
+}
+.home_section .content .text{
+    color: #fff;
+    margin-bottom: 50px;
+    text-align:center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index:3;
+}
+.text > h1{
+    font-size:60px;
+    font-weight:800;
+    margin:0 0 10px;
+}
+.text > p{
+    font-size:20px;
+}
+section{
+    display:flex;
+    flex-direction:column;
+    padding:80px 0 0;
+    align-items:center;
+}
+.content a {
+    z-index:3;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 17px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+.content > a:hover{
+    border: 2px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255,255,255,0.2);
+    color:white;
+}
+
+/* our services section */
+.ourservices > h2{
+    font-size:2rem;
+    font-weight:900;
+}
+.subourservicsp{
+    font-size :1.1em;
+    margin-top:-15px;
+}
+section .cards{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1200px;
+    margin-top:50px;
+    padding:0 10px;
+    justify-content:space-between;
+}
+.card{
+    margin-bottom:40px;
+    padding:40px 15px;
+    background-color: #fff;
+    width: calc(100% / 3 - 30px);
+    border-radius:5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    text-align: center;
+}
+.card > img{
+    height:120px;
+    width:120px;
+    margin:0 0 20px;
+    border-radius:100%;
+    object-fit: cover;
+}
+.card > h3{
+    font-weight:800;
+}
+.card > p{
+    padding:0 15px;
+    margin-top:5px;
+    line-height:20px;
+    font-size:1em;
+    letter-spacing: 0.7px;
+}
+
+/* about section */
+.aboutus{
+    max-width:1200px;
+    margin:0 auto;
+}
+.aboutus > h2{
+    font-size:2rem;
+    font-weight:900;
+}
+.aboutus > p{
+    font-size :1.1em;
+    margin-top:-15px;
+}
+.row{
+    padding:0 10px;
+}
+.ourstory{
+    margin-top:30px;
+}
+.row > h3{
+    margin:30px 0 10px;
+    font-weight:800;
+}
+.row > p{
+    font-size:1.06em;
+    letter-spacing: 0.8px;
+    line-height:23px;
+}
+.ourteam{
+    text-align:left;
+    width:100%;
+}
+.ourteam > ul{
+    padding-left:20px;
+    line-height:25px;
+    font-size:1.06em;
+    letter-spacing: 0.8px;
+}
+
+/* contact us section */
+.contactus > h2{
+    font-size:2rem;
+    font-weight:900;
+}
+.contactus > p{
+    font-size :1.1em;
+    margin-top:-15px;
+}
+.contactus_sub{
+    display:flex;
+    margin:60px 0 90px;
+    max-width:1200px;
+    align-items:center;
+    justify-content:space-between;
+}
+.contact_detail > p{
+    margin-bottom:10px;
+    font-size :1.1em;
+    font-weight:lighter
+}
+i{
+    color: #7a7a7a;
+    margin-right: 10px;
+
+}
+.col{
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+form > input{
+    margin-bottom:20px;
+    padding:10px;
+    width:100%;
+    font-size:16px;
+    height:45px;
+    border: 1px solid #bfbfbf;
+}
+form > textarea{
+    padding:10px;
+    width:100%;
+    height:150px;
+    border: 1px solid #bfbfbf;
+    font-size:16px;
+}
+form>button{
+    margin-top:10px;
+    font-size:19px;
+    padding:10px 20px;
+    color:white;
+    border:none;
+    border-radius:5px;
+    background-color: rgb(51,51,51);
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: rgba(51,51,51,0.8)
+}
