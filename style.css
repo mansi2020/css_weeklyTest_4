@@ -64,7 +64,7 @@ h2{
     background-attachment: fixed;
     background-position:center 65% ;
 }
-.home_section::before{
+.home_section::after{
     content:"";
     position:absolute;
     left:0;
